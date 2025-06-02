@@ -5,7 +5,9 @@ library(sf)
 library(ggplot2)
 
 2) Load Collision Data
-collisions <- read_csv("NYPD_Motor_Vehicle_Collisions.csv")
+#rename Excel File to:NYPD_Motor_Vehicle_Collisions.xlsx
+collisions <- ibrary(readxl)
+collisions <- read_excel("NYPD_Motor_Vehicle_Collisions.xlsx")
 # Preview
 glimpse(collisions)
 
